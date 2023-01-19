@@ -2,7 +2,7 @@
     background-color: #CCE3FE;
 }
 
-header {
+header, footer {
     text-align: center;
 }
 
@@ -15,4 +15,13 @@ header h2 {
     font-family: 'Roboto Mono', monospace;
     font-weight: 700;
     font-size: 1em;
+}
+
+main {
+    margin-left: 50px;
+    margin-right: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    
 }

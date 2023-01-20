@@ -4,7 +4,6 @@
 
 body {
     background-color: #CCE3FE;
-
 }
 
 header, footer {
@@ -19,10 +18,12 @@ header h1 {
 
 
 #banner {
-    position: fixed;
-    top: 145;
-    left: 50;
+    position: relative;
+    display: block;
+}
 
+#decorative {
+    position: relative;
 }
 
 #leftcloud{
@@ -38,7 +39,6 @@ header h1 {
     left: 40px;
     z-index: auto;
 }
-
 
 header h2 {
     font-family: 'Roboto Mono', monospace;
@@ -75,6 +75,7 @@ main {
 footer {
     font-family: 'MuseoModerno', cursive;
     font-size: 1em;
+    padding-bottom: 20px;
 }
 
 footer p {

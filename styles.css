@@ -1,5 +1,11 @@
 * {
     background-color: #CCE3FE;
+    color: #1B0E02;
+}
+
+body {
+    background-color: #CCE3FE;
+
 }
 
 header, footer {
@@ -22,6 +28,36 @@ main {
     margin-right: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
-    
+    grid-gap: 10px;    
+}
+
+main section {
+    background-color: white;
+
+}
+
+.box h2 {
+    font-family: 'MuseoModerno', cursive;
+    font-size: 1em;
+}
+
+.box ul li a {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+footer {
+    font-family: 'MuseoModerno', cursive;
+    font-size: 1em;
+}
+
+footer p {
+    font-weight: 700;
+}
+
+footer a {
+    font-weight: 400;
+    text-decoration: none;
 }

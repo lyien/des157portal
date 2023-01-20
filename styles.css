@@ -13,12 +13,25 @@ header, footer {
 header h1 {
     font-family: 'MuseoModerno', cursive;
     font-size: 3.75em;
-    margin-bottom: 0;
+    margin: 0;
+    padding-top: 20px;
+}
+
+header h2 {
+    padding-top: 0px
+    
 }
 
 #banner {
    max-height: 250px;
-   padding: 20px;
+   padding-top: 10px;
+   padding-bottom: 30px;
+}
+
+#decorative {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -43,17 +56,23 @@ header h2 {
 }
 
 main {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 60px;    
+    grid-gap: 60px;   
+    width: 1200;
+ 
+}
+
+#decorative, .box {
+    border: 2px solid #1B0E02;
+    box-shadow: -5px 5px 0px 2px #000000;
 }
 
 .box {
     background-color: white;
     padding-left: 20px;
-    box-shadow: -5px, 5px, black;
 }
 
 .box h2 {
@@ -71,11 +90,13 @@ main {
 footer {
     font-family: 'MuseoModerno', cursive;
     font-size: 1em;
+    padding-top: 20px;
     padding-bottom: 20px;
 }
 
 footer p {
     font-weight: 700;
+    margin: 0px;
 }
 
 footer a {

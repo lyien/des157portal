@@ -1,5 +1,4 @@
 * {
-    background-color: #CCE3FE;
     color: #1B0E02;
 }
 
@@ -15,7 +14,31 @@ header, footer {
 header h1 {
     font-family: 'MuseoModerno', cursive;
     font-size: 3.75em;
+    margin-bottom: 0;
 }
+
+
+#banner {
+    position: fixed;
+    top: 145;
+    left: 50;
+
+}
+
+#leftcloud{
+    position: relative;
+    top: 190px;
+    left: -180px;
+    z-index: auto;
+}
+
+#rightcloud{
+    position: relative;
+    top: 200px;
+    left: 40px;
+    z-index: auto;
+}
+
 
 header h2 {
     font-family: 'Roboto Mono', monospace;
@@ -28,12 +51,13 @@ main {
     margin-right: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;    
+    grid-gap: 60px;    
 }
 
-main section {
+.box {
     background-color: white;
-
+    padding-left: 20px;
+    box-shadow: -5px, 5px, black;
 }
 
 .box h2 {

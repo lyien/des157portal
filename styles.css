@@ -2,6 +2,7 @@
     color: #1B0E02;
 }
 
+
 body {
     background-color: #CCE3FE;
 }
@@ -32,6 +33,10 @@ header h2 {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    background: linear-gradient(359deg, #e59183, #f0d593, #d4f3d1);
+    background-size: 600% 600%;
+
+    animation: gradient 5s ease infinite;
 }
 
 
@@ -61,7 +66,6 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 60px;   
-    /* min-width: 1110px; */
 }
 
 #decorative, .box {
@@ -89,7 +93,7 @@ main {
 footer {
     font-family: 'MuseoModerno', cursive;
     font-size: 1em;
-    padding-top: 20px;
+    padding-top: 30px;
     padding-bottom: 20px;
 }
 
@@ -101,4 +105,17 @@ footer p {
 footer a {
     font-weight: 400;
     text-decoration: none;
+}
+
+/* .css-selector {
+    background: linear-gradient(359deg, #e59183, #f0d593, #d4f3d1);
+    background-size: 600% 600%;
+
+    animation: gradient 0s ease infinite;
+} */
+
+@keyframes gradient {
+    0%{background-position:0% 11%}
+    50%{background-position:100% 90%}
+    100%{background-position:0% 11%}
 }

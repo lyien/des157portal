@@ -16,28 +16,22 @@ header h1 {
     margin-bottom: 0;
 }
 
-
 #banner {
-    position: relative;
-    display: block;
+   max-height: 250px;
+   padding: 20px;
 }
 
-#decorative {
-    position: relative;
-}
-
-/* I'm stuck here */
 
 #leftcloud{
     position: relative;
-    top: 190px;
+    top: -210px;
     left: -180px;
     z-index: auto;
 }
 
 #rightcloud{
     position: relative;
-    top: 200px;
+    top: -210px;
     left: 40px;
     z-index: auto;
 }

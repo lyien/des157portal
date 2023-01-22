@@ -89,7 +89,7 @@ main {
     text-decoration: none;
 }
 
-.box ul li a:hover {
+a:hover {
     color: #F66464;
 }
 

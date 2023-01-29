@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Journal</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap"rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 id="header">LAURA'S JOURNAL</h1>
+        <h2>DES 157A - INTERACTIVE MEDIA II - WINTER 2023</h2>
+    </header>
+
+    <main>
+        <article>
+            <h2>Best Practices in Form Design</h2>
+            <time datetime="2023-01-031">January 31, 2023</time>
+            <p>The article <a href="https://uxdesign.cc/best-practices-for-form-design-ff5de6ca8e5f">Best Practices for Form Design</a> written by Salim Ansari discusses how to design forms which are efficient and easy to use. He discusses strategies to reduce the cognitive load of filling out forms which can often be cumbersome and confusing.</p>
+
+            <p>One strategy I found particularly interesting was to position labels on the top left of the input field close to the top border of the field. I have encountered forms where labels are too far away from the field, or it is confusing to understand which field the label corresponds to. This design makes the label's intention clear. However, I wonder if this strategy would work for forms in languages that are read with different conventions than English. If a form was written in a language that read right to left, would the best place to put a label be on the upper right instead?</p>
+
+            <p>An example of a website that uses well designed forms is the <a href="https://www.friendlybureau.com/">Friendly Bureau</a>, which is an online art shop that uses Shopify to host their website. The shipping and payment forms follow several of the principles outlined by Ansari including sizing fields according to the character length of content, using specific labeling action buttons, and displaying labels when inputting information.
+            </p>
+        </article>
+    </main>
+
+    <footer>
+        <a href="https://lyien.github.io/des157portal/">Portal Page</a>
+    </footer>
+
+    <script>
+
+        var yourName = prompt("What is your name?", "");
+
+        function replaceName (name) {
+            if (name != null){
+            document.getElementById("header").innerHTML = `${name}'s Journal`;
+        } else {
+            document.getElementById("header").innerHTML = `Your Journal`
+        }
+            return name;
+
+        }
+
+        replaceName (yourName);
+       
+
+        
+        
+    </script>
+
+</body>
+
+</html>

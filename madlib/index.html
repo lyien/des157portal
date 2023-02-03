@@ -1,38 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laura Yien Mad Lib</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
     <script src="script.js" defer></script>
 
 </head>
+
 <body>
-    <header>
+    <!-- <header>
         <h1>Two Chickens One Chevy...</h1>
-    </header>
+        <img src="images/mainchicken.png" alt="two chickens in a chevy" width="315px" height="290px">
+    </header> -->
 
     <main>
-        <section>
-            <h2>How will this first date end?</h2>
-            <img src="images/mainchicken.png" alt="two chickens in a chevy" width="315px" height="290px">
-            <form>
-                <label for="restaurant">Restaurant</label><input type ="text" id="restaurant" required>
+        <section id="madlibtext">
+            <div>
+                <h1>Two Chickens One Chevy...</h1>
+                <img src="images/mainchicken.png" alt="two chickens in a chevy" width="315px" height="290px">
+            </div>
 
-                <label for="name1">A Name</label><input type ="text" id="name1" required>
+            <div>
+                <h2>How will this first date end?</h2>
+                <form>
+                    <label for="restaurant">Restaurant</label><input type="text" id="restaurant" required>
 
-                <label for="name2">Another Name</label><input type ="text" id="name2" required>
+                    <label for="name1">A Name</label><input type="text" id="name1" required>
 
-                <label for="adjective">Adjective</label><input type ="text" id="adjective" required>
+                    <label for="name2">Another Name</label><input type="text" id="name2" required>
 
-                <label for="noun">Noun</label><input type ="text" id="noun" required>
+                    <label for="adjective">Adjective</label><input type="text" id="adjective" required>
 
-                <label for="verb">Verb</label><input type ="text" id="verb" required>
+                    <label for="noun">Noun</label><input type="text" id="noun" required>
 
-                <input value="Write Your Ending" type ="submit">
-            </form>
+                    <label for="verb">Verb</label><input type="text" id="verb" required>
+
+                    <input value="Write Your Ending" type="submit">
+                </form>
+            </div>
+
         </section>
 
         <section>
@@ -54,16 +67,29 @@
             </div>
 
             <div id="panel4">
-                <p>[Name1] doesn't panic, grasping [name2] wing and together, they [verb] across the road and into the sunset</p>
+                <p>[Name1] doesn't panic, grasping [name2] wing and together, they [verb] across the road and into the
+                    sunset</p>
                 <img src="images/chicken4.png" alt="chickens holding hands" width="570" height="260">
             </div>
 
-            <input value="Write Again" type ="submit">
+            <input value="Write Again" type="submit">
 
         </section>
 
     </main>
 
-   
+    <footer>
+        <p>Inspired by "2 Baddies" by NCT 127</p>
+        <iframe style="border-radius:12px"
+            src="https://open.spotify.com/embed/track/1WKLxJpDqkQ9x1qEDNutoX?utm_source=generator&theme=0" width="100%"
+            height="152" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+        <p>Designed by Laura Yien</p>
+        <a href="https://lyien.github.io/des157portal/">Portal Page</a>
+    </footer>
+
+
 </body>
+
 </html>

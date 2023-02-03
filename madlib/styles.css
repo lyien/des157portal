@@ -1,8 +1,32 @@
 * {
     color: #1B0E02;
+    background-image: url(images/background.png);
 }
 
-section, form {
+h1, h2 {
+    font-family: 'Bangers', cursive;
+}
+
+h1{
+    font-size: 72px;
+}
+
+form label, input{
+    display: block;
+    padding: 5px;
+}
+
+#madlibtext{
+    display: flex;
+    flex: 1;
+}
+
+label, p {
+    font-family: 'Comic Neue', cursive;
+    font-weight: 700;
+}
+
+header h1, form {
     display: block;
     border: 2px solid #1B0E02;
     box-shadow: -5px 5px 0px 2px #000000;

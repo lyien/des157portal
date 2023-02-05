@@ -1,6 +1,5 @@
 * {
     color: #1B0E02;
-    background-image: url(images/background.png);
 }
 
 
@@ -13,8 +12,7 @@ h1{
 }
 
 body{
-    width: 1200px;
-    margin: auto;
+    background-image: url(images/background.png);
 }
 
 form label, input{
@@ -23,11 +21,13 @@ form label, input{
 }
 
 #madlibtext{
+    width: 1200px;
     display: flex;
     flex: 1;
     align-content: stretch;
     justify-content: space-around;
     align-items: flex-start;
+    margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -36,21 +36,16 @@ form label, input{
     font-size: 2em;
 }
 
-#madlibimage div{
-    margin: auto;
-    text-align: center;
-}
-
-label, p {
+label, p, footer a {
     font-family: 'Comic Neue', cursive;
     font-weight: 700;
-    font-size: 1em;
+    font-size: 18px;
 }
 
 #madlibtext h1{
     display: block;
     border: 2px solid #1B0E02;
-    box-shadow: -5px 5px 0px 2px #000000;
+    box-shadow: -5px 5px 0px 2px #1B0E02;
     background-color: white;
     width: 400px;
     padding: 30px;
@@ -59,7 +54,7 @@ label, p {
 form {
     display: block;
     border: 2px solid #1B0E02;
-    box-shadow: -5px 5px 0px 2px #000000;
+    box-shadow: -5px 5px 0px 2px #1B0E02;
     background-color: white;
     width: 400px;
     margin:auto;
@@ -68,16 +63,77 @@ form {
     padding-right: 40px;
 }
 
-input[type="submit"] {
+#madlibtext input[type="submit"] {
     margin-top: 10px;
 }
 
 input[type="submit"], textarea {
     font-family: 'Bangers', cursive;
-    color: #000000;
+    color: white;
+    background-color: #1B0E02;
+    border: 0px;
+    padding: 10px;
+    font-size: 18px;
 }
 
-#madlibimage {
+/* second panel */
+
+#madlibimage input[type="submit"] {
+    margin: auto;
+}
+
+#madlibimage h2{
+    font-size: 48px;
+    display: block;
+    padding: 20px;
+    width: 600px;
+    border: 2px solid #1B0E02;
+    background-color: white;
+    box-shadow: -5px 5px 0px 2px #1B0E02;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 50px;
+
+}
+
+.panel {
     display: block;
     border: 2px solid #1B0E02;
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 30px;
+    width: 570px;
+}
+
+.panel img{
+    margin: 0px;
+    padding: 0px;
+}
+
+.panel p{
+    font-size: 18px;
+    margin: 0px;
+    padding: 20px;
+    padding-left: 40px;
+    border-bottom: 2px solid #1B0E02;
+    text-align: left;
+}
+
+footer{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 50px;
+    display: block;
+    background-color: #1B0E02;
+    padding: 20px;
+}
+
+footer p, footer a{
+    color:white;
+}
+
+
+footer a{
+   text-decoration: none; 
 }

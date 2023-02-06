@@ -15,11 +15,6 @@
 </head>
 
 <body>
-    <!-- <header>
-        <h1>Two Chickens One Chevy...</h1>
-        <img src="images/mainchicken.png" alt="two chickens in a chevy" width="315px" height="290px">
-    </header> -->
-
     <main>
         <section id="madlibtext">
             <div id="headerleft">
@@ -27,24 +22,36 @@
                 <img src="images/mainchicken.png" alt="two chickens in a chevy" width="315px" height="290px">
             </div>
 
-            <div #formstyle>
+            <div id="formstyle">
                 <h2>How will this first date end?</h2>
 
                 <form>
+                    <div class="inputclass">
+                        <label for="restaurant">Restaurant</label><input type="text" id="restaurant" required>
+                    </div>
 
-                    <label for="restaurant">Restaurant</label><input type="text" id="restaurant" required>
+                    <div class="inputclass">
+                        <label for="name1">A Name</label><input type="text" id="name1" required>
+                    </div>
+                    
+                    <div class="inputclass">
+                        <label for="name2">Another Name</label><input type="text" id="name2" required>
+                    </div>
 
-                    <label for="name1">A Name</label><input type="text" id="name1" required>
+                    <div class="inputclass">
+                        <label for="adjective">Adjective</label><input type="text" id="adjective" required>
+                    </div>
 
-                    <label for="name2">Another Name</label><input type="text" id="name2" required>
+                    <div class="inputclass">
+                        <label for="noun">Noun</label><input type="text" id="noun" required>
+                    </div>
 
-                    <label for="adjective">Adjective</label><input type="text" id="adjective" required>
-
-                    <label for="noun">Noun</label><input type="text" id="noun" required>
-
-                    <label for="verb">Verb</label><input type="text" id="verb" required>
+                    <div class="inputclass">
+                        <label for="verb">Verb</label><input type="text" id="verb" required>
+                    </div>
 
                     <input value="Write Your Ending" type="submit" class="button">
+
                 </form>
             </div>
 

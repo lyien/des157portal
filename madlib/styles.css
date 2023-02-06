@@ -24,15 +24,17 @@ label, p, footer a {
 
 input[type="submit"], textarea {
     font-family: 'Bangers', cursive;
-    color: white;
-    background-color: #1B0E02;
-    border: 0px;
+    background-color: white;
+    color: #1B0E02;
+    border: 1px solid #1B0E02;
     padding: 10px;
     font-size: 18px;
 }
 
 input[type="submit"]:hover {
-    background-color: #B55E5E;
+    color: white;
+    background-color: #1B0E02;
+
 }
 
 /* panel1 */
@@ -150,20 +152,26 @@ input[type="submit"]:hover {
 }
 
 #madlibimage input[type="submit"] {
-    margin-left: 30%;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 footer{
+    margin: auto;
     text-align: center;
     font-size: 18px;
     margin-top: 50px;
     display: block;
-    background-color: #1B0E02;
-    padding: 20px;
+    border-top: 2px solid #1B0E02;
+    background-color: white;
+    /* box-shadow: -5px 5px 0px 2px #1B0E02; */
+    padding: 10px;
 }
 
 footer p, footer a{
-    color:white;
+    color:#1B0E02;
 }
 
 
@@ -173,6 +181,10 @@ footer a{
 
 footer a:hover{
     text-decoration: underline; 
+ }
+
+ iframe{
+    border:0;
  }
 
 

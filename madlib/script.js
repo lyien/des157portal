@@ -7,7 +7,6 @@
     const para2 = document.querySelector("#panel2");
     const para3 = document.querySelector("#panel3");
     const para4 = document.querySelector("#panel4");
-    const section = document.querySelector("section");
 
     form.addEventListener("submit", function (event) {
         event.preventDefault();

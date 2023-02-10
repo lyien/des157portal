@@ -16,7 +16,7 @@
 
 <body>
     <main>
-        <section id="madlibtext">
+        <section id="madlibtext" class="showing">
             <div id="headerleft">
                 <h1>Two Chickens One Chevy...</h1>
                 <img src="images/mainchicken.png" alt="two chickens in a chevy" width="315" height="290">
@@ -39,7 +39,7 @@
                     </div>
 
                     <div class="inputclass">
-                        <label for="adjective">Adjective</label><input type="text" id="adjective" required>
+                        <label for="adj">Adjective</label><input type="text" id="adj" required>
                     </div>
 
                     <div class="inputclass">
@@ -50,38 +50,38 @@
                         <label for="verb">Verb</label><input type="text" id="verb" required>
                     </div>
 
-                    <input value="Write Your Ending" type="submit" class="button">
+                    <input value="Write Your Ending" type="submit" class="button" id="firstbutton">
 
                 </form>
             </div>
 
         </section>
 
-        <section id="madlibimage">
+        <section id="madlibimage" class="hidden">
             <h2>Two Chickens One Chevy</h2>
             <div class="panel">
-                <p>After dinner at [mcdonald's], [name1] drives [name2] home in their Chevy.</p>
+                <p id="panel1">After dinner at [mcdonald's], [name1] drives [name2] home in their Chevy.</p>
                 <img src="images/chicken1.png" alt="chickens in a chevy" width="570" height="260">
             </div>
 
             <div class="panel">
-                <p>For a split second, [name1] looks away from the road because [name2] is so [adj].</p>
+                <p id="panel2">For a split second, [name1] looks away from the road because [name2] is so [adj].</p>
                 <img src="images/chicken2.png" alt="chickens in a chevy" width="570" height="260">
 
             </div>
 
             <div class="panel">
-                <p>BOOM! The chevy hit a [noun]. Oh no! How will they cross the road now?!</p>
+                <p id="panel3">BOOM! The chevy hit a [noun]. Oh no! How will they cross the road now?!</p>
                 <img src="images/chicken3.png" alt="chickens in an accident" width="570" height="260">
             </div>
 
             <div class="panel">
-                <p>[Name1] doesn't panic, grasping [name2] wing and together, they [verb] across the road and into the
+                <p id="panel4">[Name1] doesn't panic, grasping [name2] wing and together, they [verb] across the road and into the
                     sunset</p>
                 <img src="images/chicken4.png" alt="chickens holding hands" width="570" height="260">
             </div>
 
-            <input value="Write Again" type="submit" class="button">
+            <a href="index.html" id="lastbutton">Write Again</a>
 
         </section>
 

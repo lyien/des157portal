@@ -16,13 +16,26 @@ body{
     background-image: url(images/background.png);
 }
 
-label, p, footer a {
+main{
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+}
+
+label,footer a, span, footer p{
     font-family: 'Comic Neue', cursive;
     font-weight: 700;
     font-size: 18px;
 }
 
-input[type="submit"], textarea {
+p, input[type="text"]{
+    font-family: 'Comic Neue', cursive;
+    font-weight: 400;
+    font-size: 18px;
+
+}
+
+input[type="submit"], textarea, #lastbutton {
     font-family: 'Bangers', cursive;
     background-color: white;
     color: #1B0E02;
@@ -31,13 +44,19 @@ input[type="submit"], textarea {
     font-size: 18px;
 }
 
-input[type="submit"]:hover {
+input[type="submit"]:hover, #lastbutton:hover {
     color: white;
     background-color: #1B0E02;
-
+    cursor:pointer;
 }
 
-/* panel1 */
+.hidden {
+    display: none;
+}
+
+.showing {
+    display: block;
+}
 
 
 #madlibtext{
@@ -109,6 +128,7 @@ input[type="submit"]:hover {
 
 
 
+
 /* second panel */
 
 
@@ -151,11 +171,17 @@ input[type="submit"]:hover {
     text-align: left;
 }
 
-#madlibimage input[type="submit"] {
+#lastbutton {
     display: block;
+    width: fit-content;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
+    text-decoration: none;
+}
+
+span {
+    text-decoration: underline;
 }
 
 footer{
@@ -166,7 +192,6 @@ footer{
     display: block;
     border-top: 2px solid #1B0E02;
     background-color: white;
-    /* box-shadow: -5px 5px 0px 2px #1B0E02; */
     padding: 10px;
 }
 

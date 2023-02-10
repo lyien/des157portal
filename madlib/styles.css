@@ -190,13 +190,12 @@ footer{
     font-size: 18px;
     margin-top: 50px;
     display: block;
-    border-top: 2px solid #1B0E02;
-    background-color: white;
+    background-color: #1B0E02;
     padding: 10px;
 }
 
 footer p, footer a{
-    color:#1B0E02;
+    color:white;
 }
 
 
@@ -207,9 +206,5 @@ footer a{
 footer a:hover{
     text-decoration: underline; 
  }
-
- /* iframe{
-    border:0;
- } */
 
 

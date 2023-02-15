@@ -9,6 +9,7 @@ body {
     animation: gradient 12s ease infinite;
 }
 
+
 header, footer {
     text-align: center;
 }
@@ -44,18 +45,26 @@ article {
     margin-bottom: 40px;
 }
 
+figure{
+    text-align: center;
+}
+
 time {
     font-family: 'Roboto Mono', monospace;
     font-weight: 700;
     font-size: 1em;
 }
 
-article p, footer a {
+article p, footer a, figcaption {
     font-family: 'Roboto Mono', monospace;
     font-weight: 400;
     font-size: 1em;
     line-height: 1.3em;
+}
 
+figcaption{
+    font-weight: 700;
+    font-style: italic;
 }
 
 footer {

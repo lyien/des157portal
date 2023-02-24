@@ -74,7 +74,7 @@ img {
     }
 }
 
-#first p, #t4tag {
+#first p, .secondtag{
     display: block;
     width: fit-content;
     padding: 20px;
@@ -156,7 +156,11 @@ img {
 
 /* T4 */
 
-#T4 h2{
+#T4 h2, #t4tag{
     color: #009FB3;
+}
+
+#t4tag{
+    background-color: #FBF0E3;
 }
 

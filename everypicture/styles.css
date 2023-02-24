@@ -1,0 +1,128 @@
+/* global styles */
+body {
+    background-image: url(images/background.png);
+
+}
+
+h1,h3, body {
+    color: #2D241D;
+}
+
+h2 {
+    font-family: 'Chewy', cursive;
+    font-size: 120px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+
+h3, body {
+    font-family: 'Delius', cursive;
+}
+
+body {
+    font-size: 18px;
+}
+
+header, section {
+    margin: auto;
+    width: 1100px;
+}
+
+img {
+    Display: block;
+    Max-width: 100%;
+    Height: auto;
+}
+
+/* first main section */
+#first h1 {
+    font-family: 'Chewy', cursive;
+    font-size: 120px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+
+}
+
+#first {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 140px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#first img {
+    background: linear-gradient(359deg, #e59183, #f0d593, #d4f3d1);
+    background-size: 600% 600%;
+    animation: gradient 8s ease infinite;
+}
+
+/* animation */
+@keyframes gradient {
+    0% {background-position: 0% 11%
+    }
+
+    50% {background-position: 100% 90%
+    }
+
+    100% {background-position: 0% 11%
+    }
+}
+
+#first p {
+    background-color: #CCE3FE;
+    display: block;
+    width: fit-content;
+    padding: 20px;
+    font-size: 24px;
+    margin-top: 0;
+    border-radius: 5px;
+}
+
+/* Section Formatting */
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 151px;
+}
+
+
+
+.leftintro{
+    width: 550px;
+}
+
+.leftintro h2 {
+    margin-bottom: 0;
+}
+
+.leftintro p{
+    line-height: 24px;
+}
+
+.postit{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+}
+
+
+
+.postitnote{
+    background-color: #FAEAD8;
+    padding: 30px;
+    width: 200px;
+    height: 190px;
+    font-size: 16px;
+    box-shadow: -3px 3px 2px 1px rgba(0, 0, 0, 0.05);
+}

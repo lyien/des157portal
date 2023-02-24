@@ -74,8 +74,7 @@ img {
     }
 }
 
-#first p {
-    background-color: #CCE3FE;
+#first p, #t4tag {
     display: block;
     width: fit-content;
     padding: 20px;
@@ -84,17 +83,21 @@ img {
     border-radius: 5px;
 }
 
-/* Section Formatting */
+#first p{
+    background-color: #CCE3FE;
+}
 
-.intro {
+
+/* Section 1 Formatting */
+
+.intro, .second {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 0px;
-    gap: 151px;
+    gap: 150px;
+    margin-bottom: 100px;
 }
-
-
 
 .leftintro{
     width: 550px;
@@ -116,8 +119,6 @@ img {
     gap: 20px;
 }
 
-
-
 .postitnote{
     background-color: #FAEAD8;
     padding: 30px;
@@ -126,3 +127,36 @@ img {
     font-size: 16px;
     box-shadow: -3px 3px 2px 1px rgba(0, 0, 0, 0.05);
 }
+
+.introimage{
+    align-content:center;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    width: 315px;
+    padding:10px;
+}
+
+.introimage img{
+    margin:auto;
+}
+
+/* Section 2 Formatting */
+
+.second{
+    justify-content: center;
+}
+
+.second h2{
+    font-size: 72px;
+    width: 470px;
+    margin-top:0;
+    margin-bottom:0;
+}
+
+/* T4 */
+
+#T4 h2{
+    color: #009FB3;
+}
+

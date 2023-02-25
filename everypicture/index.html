@@ -9,6 +9,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Delius&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+
 </head>
 
 <body>
@@ -17,11 +19,12 @@
             <h1>Laura's top 5 boba places</h1>
             <p>Davis Edition</p>
         </div>
+
         <img src="images/main.png" height="513" width="440" alt="boba collage">
 
     </header>
 
-    <article id="T4">
+    <article id="T4" class="hidden">
         <section class="intro">
             <div class="leftintro">
                 <h2>T4 <span class="number" id="t4number">#5</span></h2>
@@ -65,11 +68,11 @@
         </section>
     </article>
 
-    <article id="tpercent">
+    <article id="tpercent" class="hidden">
+
         <section class="intro">
             <div class="leftintro">
-                <h2>Teapercent <span class="number" id="tpercentnumber">#4</span></h2>
-                <!-- <p class="number">#5</p> -->
+                <h2>Teapercent</h2>
                 <p>Teapercent is new boba place in Davis, but super popular in Sacramento. The drinks are high quality, but I haven't found one that I absolutely love. This location also has a Mochinut inside which means its easy to get hot dogs and donuts as snacks. Unfortunately, there is not much seating.</p>
                 <section class="postit">
                     <div class="postitnote">
@@ -90,10 +93,15 @@
                 </section>
             </div>
 
-            <div class="introimage">
-                <img src="images/tpercentmain.png" height="250" width="270" alt="laura at Tpercent">
-                <p>Strawberry Overload at Teapercent</p>
+            <div>
+                <p class="number" id="tpercentnumber">#4</p>
+                <div class="introimage" id="tpercentmainimg">
+                    <img src="images/tpercentmain.png" height="250" width="270" alt="laura at Tpercent">
+                    <p>Strawberry Overload at Teapercent</p>
+                </div>
             </div>
+
+            
         </section>
 
         <section class="second">
@@ -106,7 +114,7 @@
         </section>
     </article>
 
-    <article id="umetea">
+    <article id="umetea" class="hidden">
         <section class="intro">
             <div class="leftintro">
                 <h2>UME Tea <span class="number" id="umeteanumber">#3</span></h2>
@@ -147,11 +155,10 @@
         </section>
     </article>
 
-    <article id="teaspoon">
+    <article id="teaspoon" class="hidden">
         <section class="intro">
             <div class="leftintro">
-                <h2>Teaspoon <span class="number" id="teaspoonnumber">#2</span></h2>
-                <!-- <p class="number">#5</p> -->
+                <h2>Teaspoon</h2>
                 <p>Teaspoon is my go to place when I'm at home in San Jose. No matter the location, the drinks and the boba are always good. I've tried almost everything on the menu, but my favorite is the Thai Tea with Classic Cream.</p>
                 <section class="postit">
                     <div class="postitnote">
@@ -172,10 +179,15 @@
                 </section>
             </div>
 
-            <div class="introimage">
-                <img src="images/teaspoonmain_2.png" height="250" width="270" alt="laura in front of teaspoon">
-                <p>Freshman year Laura with roasted oolong tea with lychee jelly</p>
+            <div>
+                <p class="number" id="teaspoonnumber">#2</p>
+                <div class="introimage">
+                    <img src="images/teaspoonmain_2.png" height="250" width="270" alt="laura in front of teaspoon">
+                    <p>Freshman year Laura with roasted oolong tea with lychee jelly</p>
+                </div>
             </div>
+
+            
         </section>
 
         <section class="second">
@@ -188,11 +200,10 @@
         </section>
     </article>
 
-    <article id="itea">
+    <article id="itea" class="hidden">
         <section class="intro">
             <div class="leftintro">
-                <h2>iTea 👑<span class="number" id="iteanumber">#1</span></h2>
-                <!-- <p class="number">#5</p> -->
+                <h2>iTea 👑</h2>
                 <p>iTea is the consistent king of Davis boba, offering the best prices, quality, and quantity out of the top 5. iTea is the closest to the UCD campus so it's easy to stop by after class and the service is always quick. iTea reigns supreme at the top of this list.</p>
                 <section class="postit">
                     <div class="postitnote">
@@ -212,10 +223,14 @@
                 </section>
             </div>
 
-            <div class="introimage">
-                <img src="images/iteamain.png" height="250" width="270" alt="laura with friends at itea">
-                <p>iTea with friendos :)</p>
+            <div>
+                <p class="number" id="iteanumber">#1</p>
+                <div class="introimage">
+                    <img src="images/iteamain.png" height="250" width="270" alt="laura with friends at itea">
+                    <p>iTea with friendos :)</p>
+                </div>
             </div>
+
         </section>
 
         <section class="second">
@@ -230,6 +245,7 @@
 
     <footer>
         <button>Back to Top</button>
+        <p>Designed by <a href="https://lyien.github.io/des157portal/">Laura Yien</a></p>
     </footer>
 
 

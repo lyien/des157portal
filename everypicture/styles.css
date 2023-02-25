@@ -35,6 +35,16 @@ img {
     Height: auto;
 }
 
+.number{
+  background-color: #bbb;
+  font-size: 100px;
+  text-align: center;
+  line-height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  display: inline-block;
+}
+
 /* first main section */
 #first h1 {
     font-family: 'Chewy', cursive;
@@ -160,7 +170,7 @@ img {
     color: #009FB3;
 }
 
-#t4tag{
+#t4tag, #t4number{
     background-color: #FBF0E3;
 }
 

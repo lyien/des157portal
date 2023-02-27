@@ -15,7 +15,7 @@
         });
 
         window.addEventListener("scroll", function(){
-            pageTop = Math.floor(window.pageYOffset)+850; //at top of page, 0 pixels, more and more pixels are above top of the window
+            pageTop = Math.floor(window.pageYOffset)+900; //at top of page, 0 pixels, more and more pixels are above top of the window
             console.log(pageTop);
             if(pageTop > postTops[counter]){
                 console.log(postTops[counter])

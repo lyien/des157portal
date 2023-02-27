@@ -24,7 +24,7 @@ body {
     font-size: 18px;
 }
 
-header, section {
+section {
     margin: auto;
     width: 1100px;
     max-height: 750px;
@@ -59,6 +59,7 @@ img {
 }
 
 #first {
+    margin: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -66,6 +67,7 @@ img {
     gap: 140px;
     margin-top: 50px;
     margin-bottom: 50px;
+    width: 1100px;
 }
 
 #first img, #button {
@@ -309,23 +311,16 @@ footer a:hover{
 
 .hidden{
     opacity:0;
-    transition: all 1s;
+    transform:translateX(-100%) ;
+    transition: all 2s;
 }
 
 .show{
     opacity: 1;
-    transition: all 2s ease;
+    transition: all 3s ease;
+    transform:translateX(0) ;
+
 
 }
-
-/* .leftoffpage{
-    transform: translateX(-1000px)
-}
-
-.animateleft{
-    transform:translateX(0px);
-    transition: all 2s ease;
-} */
-
 
 

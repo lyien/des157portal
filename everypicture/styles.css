@@ -68,7 +68,7 @@ img {
     margin-bottom: 50px;
 }
 
-#first img, button:hover {
+#first img, #button {
     background: linear-gradient(359deg, #e59183, #f0d593, #d4f3d1);
     background-size: 600% 600%;
     animation: gradient 8s ease infinite;
@@ -99,7 +99,7 @@ img {
     border-radius: 5px;
 }
 
-#first p, button{
+#first p, #button:hover{
     background-color: #CCE3FE;
 }
 
@@ -291,27 +291,41 @@ footer a{
     color: #2D241D;
 }
 
-footer a:hover{
-    color: #E06F7D;
-}
 
-button{
-    border: none;
+
+#button{
+    display: block;
     padding: 20px;
     border-radius: 30px;
+    width: fit-content;
+    margin: auto;
+}
+
+footer a:hover{
+    color: #E06F7D;
 }
 
 /* animation */
 
 .hidden{
     opacity:0;
-    transform: translateX(-100%);
     transition: all 1s;
 }
 
 .show{
     opacity: 1;
-    transform: translateX(0);
+    transition: all 2s ease;
+
 }
+
+/* .leftoffpage{
+    transform: translateX(-1000px)
+}
+
+.animateleft{
+    transform:translateX(0px);
+    transition: all 2s ease;
+} */
+
 
 

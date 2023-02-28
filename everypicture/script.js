@@ -1,7 +1,7 @@
 (function (){
     "use strict"
     console.log("JS Running");
-
+// scroll function
     window.addEventListener("load", function(){
         const posts = document.querySelectorAll("article");
         let postTops = [];
@@ -38,6 +38,7 @@
 
     });
 
+    // smoothscroll back to top 
     const button = document.querySelector("#button");
     button.addEventListener("click", smoothScroll);
 
@@ -51,6 +52,29 @@
         console.log(originalTop);
     };
 
+    // overlay
 
+    const overlay = document.getElementById("bobacollageoverlay");
+
+    document.querySelector("#bobacollage").addEventListener('click', function(event){
+        event.preventDefault();
+        overlay.className = "overlayshow";
+    });
+
+    // document.querySelector(".close").addEventListener('click', function(event){
+    //     event.preventDefault();
+    //     overlay.className = "overlayhidden";
+    // });
+
+    window.onclick = function(event) {
+        if (event.target == overlay) {
+            overlay.className = "overlayhidden";
+        }
+      }
+    document.addEventListener('keydown', function(event){
+        if(event.key === "Escape"){
+            overlay.className = "overlayhidden";
+        }
+    });
 
 })();

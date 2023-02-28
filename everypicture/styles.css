@@ -56,7 +56,6 @@ img {
     letter-spacing: -0.03em;
     text-transform: uppercase;
     margin-bottom: 30px;
-
 }
 
 #first {
@@ -79,6 +78,11 @@ img {
 
 #first img{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+#bobacollage:hover{
+    box-shadow: 0px 4px 8px #83baf8;
+    cursor:pointer;
 }
 
 /* animation */
@@ -104,6 +108,11 @@ img {
 
 #first p, #button:hover{
     background-color: #CCE3FE;
+}
+
+.close{
+    border:none;
+    padding: 10px;
 }
 
 
@@ -333,19 +342,41 @@ footer a:hover{
     transform:translateX(0) ;
 }
 
+#T4 .second img, #umetea .second img, #itea .second img{
+    animation: jiggle 3s linear infinite;
+}
+
+#tpercent .second img, #teaspoon .second img{
+    animation: jiggle2 3s linear infinite;
+}
+
 .second img:hover{
-    animation: spin 1s ease infinite;
     cursor:pointer;
 }
 
-
-
- @keyframes spin {
-    0%, 40%, 65%, 100% { transform: rotate(0); }
-    25%, 75%  { transform: rotate(10deg); }
-    50%   { transform: rotate(-10deg); }   
+@keyframes jiggle{
+   0%, 100%{
+        rotate: 0deg;
+    } 
+    25%, 75%{
+        rotate: -15deg;
+    }
+    50%{
+        rotate:-30deg;
+    }
 }
 
+@keyframes jiggle2{
+    0%, 100%{
+         rotate: 0deg;
+     } 
+     25%, 75%{
+         rotate: 10deg;
+     }
+     50%{
+         rotate:20deg;
+     }
+ }
 
 @keyframes floating {
     0% { transform: translate(0,  0px); }
@@ -353,10 +384,45 @@ footer a:hover{
     100%   { transform: translate(0, -0px); }   
 }
 
- /* animation: bounce 2s ease infinite; */
+/* overlay */
 
+.overlayhidden {
+    visibility: hidden;
+    opacity: 0;
+}
 
+.overlayshow{
+    visibility:visible;
+    opacity: 1;
+}
 
+#bobacollageoverlay{
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    width: 100vw;  
+    height: 100vh;
+    overflow: auto;
+    transition-property: opacity, visibility; 
+    transition-duration: 500ms;
+    transition-timing-function: ease;
+    /* vw = viewport width */
+}
 
+#bobacollageoverlay img {
+    box-sizing: border-box;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
+/* .close{
+    position:absolute;
+    left: 700px;
+    top:635px;
 
+} */
+ 

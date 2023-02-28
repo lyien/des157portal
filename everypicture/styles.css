@@ -350,10 +350,6 @@ footer a:hover{
     animation: jiggle2 3s linear infinite;
 }
 
-.second img:hover{
-    cursor:pointer;
-}
-
 @keyframes jiggle{
    0%, 100%{
     transform: rotate(0);

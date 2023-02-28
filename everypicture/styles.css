@@ -325,7 +325,7 @@ footer a:hover{
 
 .hidden{
     opacity:0;
-    filter: blur(2x);
+    filter: blur(2px);
     transform:translateX(-50%) ;
 }
 
@@ -356,25 +356,25 @@ footer a:hover{
 
 @keyframes jiggle{
    0%, 100%{
-        rotate: 0deg;
+    transform: rotate(0);
     } 
     25%, 75%{
-        rotate: -15deg;
+        transform: rotate(-15deg);
     }
     50%{
-        rotate:-30deg;
+        transform: rotate(-30deg);
     }
 }
 
 @keyframes jiggle2{
     0%, 100%{
-         rotate: 0deg;
+         transform: rotate(0);
      } 
      25%, 75%{
-         rotate: 10deg;
+         transform: rotate(10deg);
      }
      50%{
-         rotate:20deg;
+        transform: rotate(20deg);
      }
  }
 

@@ -22,6 +22,7 @@ h3, body {
 
 body {
     font-size: 18px;
+    overflow-x: hidden;
 }
 
 section {
@@ -123,6 +124,8 @@ img {
 
 .leftintro h2 {
     margin-bottom: 0;
+    animation: floating 3s ease infinite;
+
 }
 
 .leftintro p{
@@ -309,18 +312,51 @@ footer a:hover{
 
 /* animation */
 
+
+
 .hidden{
     opacity:0;
-    transform:translateX(-100%) ;
-    transition: all 2s;
+    filter: blur(2x);
+    transform:translateX(-50%) ;
+}
+
+.hiddenright{
+    opacity:0;
+    filter: blur(2px);
+    transform:translateX(50%) ;
 }
 
 .show{
     opacity: 1;
-    transition: all 3s ease;
+    filter: blur(0);
+    transition: all 500ms ease-in;
     transform:translateX(0) ;
-
-
 }
+
+.second img:hover{
+    animation: spin 1s ease infinite;
+    cursor:pointer;
+}
+
+
+
+ @keyframes spin {
+    0%, 40%, 65%, 100% { transform: rotate(0); }
+    25%, 75%  { transform: rotate(10deg); }
+    50%   { transform: rotate(-10deg); }   
+}
+
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+ /* animation: bounce 2s ease infinite; */
+
+
+
+
 
 

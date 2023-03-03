@@ -1,0 +1,29 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    padding: 50px;
+    line-height: 1.5em;
+}
+
+h1{
+    font-family: 'Fredoka One', cursive;
+}
+
+button { 
+    padding: 10px;
+}
+
+div {
+    padding: 20px;
+}
+
+#gamecontrol, #score {
+    background-color: aliceblue;
+}
+
+#game {
+    background-color:#eaeaea;
+}
+#actions {
+    background-color: silver;
+}

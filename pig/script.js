@@ -7,10 +7,14 @@
     const game = document.querySelector("#game");
     const score = document.querySelector("#score");
     const actionArea = document.querySelector("#actions");
+    const form = document.querySelector ("form");
+
+    //need to do something with this to say on submit this value is collected. 
+    
 
     const gameData ={
-        dice: ["1die.jpg", "2die.jpg","3die.jpg","4die.jpg", "5die.jpg", "6die.jpg"],
-        players: ["player 1", "player2"],
+        dice: ["images/unicorn1.png", "images/unicorn2.png","images/unicorn3.png","images/unicorn4.png", "images/unicorn5.png", "images/unicorn6.png"],
+        players: [`${player1}`, `${player1}`],
         score: [0,0],
         roll1: 0,
         roll2: 0,
@@ -19,20 +23,33 @@
         gameEnd: 29 //can sent to any number want to be at end of the game (must reach this number to win)
     }
 
-    startGame.addEventListener("click", function(){
+
+    form.addEventListener("submit", function(event){
+        event.preventDefault();
         gameData.index = Math.round(Math.random());
-        gameControl.innerHTML = "<h2>The game has started</h2>";
-        gameControl.innerHTML += '<button id="quit">Wanna Quit?</button>';
-        document.getElementById("quit").addEventListener("click", function(){
-            location.reload();
-        });
+        let player1 = document.querySelector("#player1").value;
+        let player2 = document.querySelector("#player2").value;
+        // document.querySelector("first").classname = "hidden";
+        // document.querySelector("second").className = "showing";
+        setUpTurn();
+    
+    });
+    
+
+    // startGame.addEventListener("click", function(){
+    //     gameData.index = Math.round(Math.random());
+    //     // gameControl.innerHTML = "<h2>The game has started</h2>";
+    //     gameControl.innerHTML = '<button id="quit">Wanna Quit?</button>';
+    //     document.getElementById("quit").addEventListener("click", function(){
+    //         location.reload();
+    //     });
 
         // console.log(gameData.index);
         // console.log("set up the turn");
         // += adds to previous HTML added
 
-        setUpTurn();
-    });
+    //     setUpTurn();
+    // });
 
     function setUpTurn(){
         game.innerHTML = `<p>Roll the dice for ${gameData.players[gameData.index]}</p>`;
@@ -47,8 +64,8 @@
         gameData.roll1 = Math.floor(Math.random()*6) +1;
         gameData.roll2 = Math.floor(Math.random()*6) +1;
         game.innerHTML = `<p>Roll the dice for the ${gameData.players[gameData.index]}</p>`;
-        game.innerHTML += `<img src = "${gameData.dice[gameData.roll1-1]}">`;
-        game.innerHTML += `<img src = "${gameData.dice[gameData.roll2-1]}">`;
+        game.innerHTML += `<img src = "${gameData.dice[gameData.roll1-1]}" class= "dice">`;
+        game.innerHTML += `<img src = "${gameData.dice[gameData.roll2-1]}" class = "dice">`;
         gameData.rollSum = gameData.roll1 + gameData.roll2;
 
         if(gameData.rollSum == 2){
@@ -84,6 +101,7 @@
         if(gameData.score[gameData.index] > gameData.gameEnd){
             score.innerHTML = `<h2>${gameData.players[gameData.index]} wins with ${gameData.score[gameData.index]} points!</h2>`;
             actionArea.innerHTML = "";
+            // game.innerHTML = "";
             document.getElementById("quit").innerHTML = "Start a New Game";
         } else{
             showCurrentScore();
@@ -91,7 +109,8 @@
     };
 
     function showCurrentScore(){
-        score.innerHTML = `<p>The score is currently <strong>${gameData.players[0]} ${gameData.score[0]}</strong> and <strong>${gameData.players[1]} ${gameData.score[1]}</strong></p>`
+        score.innerHTML = `<p><span class="scoreheader">${gameData.players[0]}</span> Score: ${gameData.score[0]}</p>`
+        score.innerHTML += `<p><span class="scoreheader">${gameData.players[1]}</span> Score: ${gameData.score[1]}</p>`
     };
 
 })();

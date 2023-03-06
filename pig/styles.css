@@ -4,7 +4,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: #FFFF;
     background-color: #161414;
-    padding: 50px;
     line-height: 1.5em;
     max-width: 1200px;
     margin:auto;
@@ -93,6 +92,7 @@ h1{
     height: 330px;
 }
 
+
 #mainright{
     width: 600px;
     padding:0;
@@ -135,11 +135,10 @@ input{
 
 #second h1{
     text-align:center;
+    margin-top: 30px;
+
 }
 
-#second{
-    height: 100vh;
-}
 
 #score {
     text-align: center;
@@ -196,6 +195,27 @@ input{
     width: 170px;
     margin:20px;
 }
+
+#unicorns{
+    width: 490px;
+    height: 330px;
+}
+
+footer{
+    text-align:center;
+    color:#FFFFFF;
+    bottom: 0;
+}
+
+footer a{
+    text-decoration: none;
+    color:#FFFFFF;
+}
+
+footer a:hover{
+    color: #D487C3;
+}
+
 
 /* Animation */
 @keyframes gradient {

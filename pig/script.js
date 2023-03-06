@@ -8,6 +8,9 @@
     const score = document.querySelector("#score");
     const actionArea = document.querySelector("#actions");
     const form = document.querySelector ("form");
+    const dedoop = new Audio("sound/dedoop.mp4");
+    const naur = new Audio("sound/naur.mp4");
+    const wohoo = new Audio("sound/wohoo.mp4")
 
     const gameData ={
         dice: ["images/unicorn1.png", "images/unicorn2.png","images/unicorn3.png","images/unicorn4.png", "images/unicorn5.png", "images/unicorn6.png"],
@@ -31,6 +34,8 @@
         }
 
         setUpTurn();
+        dedoop.play();
+
 
         function setUpTurn(){
             game.innerHTML = `<p>Roll the dice for ${playerData.players[gameData.index]}</p>`;
@@ -55,6 +60,8 @@
                 gameData.index ? (gameData.index = 0) : (gameData.index = 1); //if this is true set to 0, if this is false set it to one 
                 setTimeout(setUpTurn, 2000);
                 showCurrentScore();
+                naur.play();
+
     
             } else if (gameData.roll1 == 1 || gameData.roll2 ==1){
                 gameData.index ? (gameData.index = 0) : (gameData.index = 1);
@@ -81,8 +88,9 @@
         function checkWinningCondition(){
             if(gameData.score[gameData.index] > gameData.gameEnd){
                 score.innerHTML = `<h2>${playerData.players[gameData.index]} wins with ${gameData.score[gameData.index]} points!</h2>`;
-                actionArea.innerHTML = "";
-                // game.innerHTML = "";
+                actionArea.innerHTML = '<img src = "images/mainunicorn.png" id="unicorns">';
+                game.innerHTML = "";
+                wohoo.play();
             } else{
                 showCurrentScore();
             }

@@ -23,23 +23,22 @@
             <p>Roll the dice to play. First player whose total reaches 30 wins. However, if you roll a one, your turn is
                 over and if you roll two “ones” (snake eyes), your current score gets zeroed out.</p>
             <form>
-                <div class="inputclass">
-                    <label for="player1">Player 1</label><input type="text" id="player1" required>
-                </div>
-    
-                <div class="inputclass">
-                    <label for="player2">Player 2</label><input type="text" id="player2" required>
-                </div>
 
+                <div id="formdiv">
+                    <div class="inputclass">
+                        <label for="player1">Player 1</label><input type="text" id="player1" required>
+                    </div>
+        
+                    <div class="inputclass">
+                        <label for="player2">Player 2</label><input type="text" id="player2" required>
+                    </div>
+                </div>
+                
                 <input value="Play Now" type="submit" class="button" id="startgame">
 
             </form>
     
-            <div id="gamecontrol">
-                <!-- <h2>Start a Game</h2> -->
-                <!-- <button id="startgame">Play Now</button> -->
-                <!-- <input value="Play Now" type="submit" class="button" id="startgame"> -->
-            </div>
+            
 
         </div>
        
@@ -48,10 +47,20 @@
     </section>
 
     <section id="second" class="hidden">
-        <h1>Unicorn Battle</h1>
+        <div id="secondheader">
+            <h1>Unicorn Battle</h1>
+            <p id="quit"><a href="index.html">Quit</a></p>
+        </div>
         <div id="score"></div>
         <div id="game"></div>
         <div id="actions"></div>
+
+       
+        <!-- <div id="gamecontrol"> -->
+            <!-- <h2>Start a Game</h2> -->
+            <!-- <button id="startgame">Play Now</button> -->
+            <!-- <input value="Play Now" type="submit" class="button" id="startgame"> -->
+        <!-- </div> -->
     </section>
 
 

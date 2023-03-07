@@ -1,0 +1,85 @@
+*{
+    font-family: 'Hind', sans-serif;
+}
+
+body{
+    background-color: white;
+    margin:auto;
+    width:100%;
+    overflow-x:hidden;
+    /* overflow:hidden; */
+
+}
+
+
+main{
+    margin-top: 50px;
+    max-width:650px;
+    font-size: 18px;
+    line-height: 1.4em;
+    height: 100%;
+    margin:auto;
+}
+
+
+header{
+    background: linear-gradient(270deg, #d487c3, #b684fa, #81b4df);
+    background-size: 600% 600%;
+    animation: gradient 10s ease infinite;
+    height: 30vh;
+    padding:50px;
+    margin:auto;
+    margin-bottom: 50px;
+    text-align:center;
+    border-bottom: 1px solid #1B0E02;
+
+}
+
+
+header p{
+    font-size: 24px;
+}
+
+
+h1{
+    font-size: 72px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+main img{
+    width: 600px;
+    height: 307px;
+}
+
+figure{
+    margin-left:0;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+header a:hover {
+color: white;
+}
+
+main a:hover{
+    color: #d487c3;
+}
+
+figcaption{
+    font-weight: 700;
+    text-align: center;
+}
+
+
+@keyframes gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}

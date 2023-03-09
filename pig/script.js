@@ -36,7 +36,6 @@
         setUpTurn();
         dedoop.play();
 
-
         function setUpTurn(){
             game.innerHTML = `<p>Roll the dice for ${playerData.players[gameData.index]}</p>`;
             actionArea.innerHTML = '<button id = "roll">Roll the Dice</button>';

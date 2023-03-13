@@ -128,7 +128,6 @@ img {
     align-items: center;
     padding: 0px;
     gap: 150px;
-    margin-bottom: 100px;
 }
 
 .leftintro{
@@ -240,36 +239,45 @@ img {
     border: 3px solid #000000;
 }
 
-#tpercent{
+/* #tpercent{
     background-image: url(images/background_black.jpg);
-}
+} */
 
 /* umetea */
 
-#umetea h2, #umetag{
+#umetea h2{
     color: #E06F7D;
     
 }
 
 #umetea .postitnote{
-    background-color: #F1C9C9;
+    background-color: #FFFFFF;
 }
 
-#umeteanumber, #umetag{
+#umeteanumber{
     background-color: #FBF0E3;
 }
 
 #umetag{
     border-radius: 40px;
+    background-color: #E06F7D;
+    color: #FFFFFF;
 }
 
-#umetea .intro{
+#umetea1{
     background: #FECCCC;
+    height:750px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-#umetea .second{
+#umetea2{
     background: #FCF0F0;
+    margin:auto;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
+
 
 /* teaspoon */
 
@@ -363,13 +371,13 @@ footer a:hover{
     transform:translateX(0) ;
 }
 
-#T4 .second img, #umetea .second img, #itea .second img{
+/* #T4 .second img, #umetea .second img, #itea .second img{
     animation: jiggle 3s linear infinite;
 }
 
 #tpercent .second img, #teaspoon .second img{
     animation: jiggle2 3s linear infinite;
-}
+} */
 
 @keyframes jiggle{
    0%, 100%{

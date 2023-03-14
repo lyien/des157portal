@@ -3,7 +3,7 @@
     console.log("JS Running");
 // scroll function
     window.addEventListener("load", function(){
-        const posts = document.querySelectorAll("article");
+        const posts = document.querySelectorAll(".targetDiv");
         let postTops = [];
         let pageTop;
         let counter = 0;
@@ -28,9 +28,11 @@
             }
 
             if(counter != previousCounter){
-                const thisArticle = document.querySelector(`article:nth-child(${counter})`)
-                
-                thisArticle.className = ("show");
+                const thisDiv = document.querySelector(`.targetDiv${counter}`);
+                console.log(counter);
+                console.log(thisDiv);
+                thisDiv.classList.replace("hidden", "show");
+                // thisDiv.classList.remove("hidden");
                 previousCounter = counter;
             }
 
@@ -57,24 +59,18 @@
         console.log(originalTop);
     };
 
-    // overlay
+    // hover
 
-    // const overlay = document.getElementById("bobacollageoverlay");
+    const bobacollage = document.querySelector("#bobacollage")
+    const firstSection = document.querySelector("#first")
 
-    // document.querySelector("#bobacollage").addEventListener('click', function(event){
-    //     event.preventDefault();
-    //     overlay.className = "overlayshow";
-    // });
+    bobacollage.addEventListener('mouseover', function(event){
+        firstSection.className  = "pinkanimation"
+    });
 
-    // window.onclick = function(event) {
-    //     if (event.target == overlay) {
-    //         overlay.className = "overlayhidden";
-    //     }
-    //   }
-    // document.addEventListener('keydown', function(event){
-    //     if(event.key === "Escape"){
-    //         overlay.className = "overlayhidden";
-    //     }
-    // });
+    bobacollage.addEventListener('mouseout', function(event){
+        firstSection.removeAttribute("class");
+    });
+     
 
 })();

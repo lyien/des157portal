@@ -427,34 +427,43 @@ footer a:hover, #button a:hover{
 
 /* animation */
 
-
-
 .hidden{
     opacity:0;
-    filter: blur(2px);
-    transform:translateX(-50%) ;
+    /* filter: blur(2px);
+    transform:translateX(-50%) ; */
 }
 
 .hiddenright{
     opacity:0;
-    filter: blur(2px);
-    transform:translateX(50%) ;
+    /* filter: blur(2px);
+    transform:translateX(50%) ; */
 }
 
 .show{
     opacity: 1;
     filter: blur(0);
     transition: all 500ms ease-in;
-    transform:translateX(0) ;
+    /* transform:translateX(0) ; */
 }
 
-/* #T4 .second img, #umetea .second img, #itea .second img{
+#T4 .second img, #umetea .second img, #itea .second img{
     animation: jiggle 3s linear infinite;
 }
 
 #tpercent .second img, #teaspoon .second img{
     animation: jiggle2 3s linear infinite;
-} */
+}
+
+.second img:hover{
+    animation: spin 3s linear infinite;
+}
+
+.pinkanimation{
+    background: linear-gradient(133deg, #231942, #9f86c0, #e0b1cb);
+    background-size: 600% 600%;
+    animation: pinkanimation 6s ease infinite;
+
+}
 
 @keyframes jiggle{
    0%, 100%{
@@ -486,45 +495,14 @@ footer a:hover, #button a:hover{
     100%   { transform: translate(0, -0px); }   
 }
 
-/* overlay */
+@keyframes spin {
+    0% {transform:rotate(0deg)}
+    100% {transform:rotate(360deg)}
 
-.overlayhidden {
-    visibility: hidden;
-    opacity: 0;
 }
 
-.overlayshow{
-    visibility:visible;
-    opacity: 1;
+@keyframes pinkanimation {
+    0%{background-position:20% 0%}
+    50%{background-position:81% 100%}
+    100%{background-position:20% 0%}
 }
-
-#bobacollageoverlay{
-    position: absolute;
-    background-color: rgba(0,0,0,0.5);
-    top: 0;
-    left: 0;
-    width: 100vw;  
-    height: 100vh;
-    overflow: auto;
-    transition-property: opacity, visibility; 
-    transition-duration: 500ms;
-    transition-timing-function: ease;
-    /* vw = viewport width */
-}
-
-#bobacollageoverlay img {
-    box-sizing: border-box;
-    background-color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-/* .close{
-    position:absolute;
-    left: 700px;
-    top:635px;
-
-} */
- 

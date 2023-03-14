@@ -71,6 +71,7 @@ img {
     letter-spacing: -0.03em;
     text-transform: uppercase;
     margin-bottom: 30px;
+    margin-top:30px;
 }
 
 #first {
@@ -80,8 +81,6 @@ img {
     align-items: center;
     padding: 0px;
     gap: 72px;
-    /* margin-top: 50px; */
-    /* margin-bottom: 50px; */
     width: 100%;
 }
 
@@ -89,11 +88,13 @@ img {
     padding-left: 100px;
 }
 
-#button {
+#button, #button1 {
     background: linear-gradient(359deg, #e59183, #f0d593, #d4f3d1);
     background-size: 600% 600%;
     animation: gradient 8s ease infinite;
 }
+
+
 
 #first img{
     height: 100vh;
@@ -117,7 +118,7 @@ img {
     }
 }
 
-#first p, .secondtag{
+.secondtag{
     display: block;
     width: fit-content;
     padding: 20px;
@@ -126,14 +127,29 @@ img {
     border-radius: 5px;
 }
 
-#first p, #button:hover{
-    background-color: #CCE3FE;
+#button1{
+    border-radius: 30px;
+    padding: 20px;
+    width:fit-content;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 24px;
+    text-align: center;
 }
 
-.close{
+#button1 a{
+    text-decoration: none;
+    color:#2D241D;
+}
+
+#button1 a:hover{
+    color:#E06F7D;
+}
+
+/* .close{
     border:none;
     padding: 10px;
-}
+} */
 
 
 /* Section 1 Formatting */
@@ -215,11 +231,27 @@ img {
 /* T4 */
 
 #T4 h2, #t4tag{
-    color: #009FB3;
+    color: #FBF0E3;
 }
 
-#t4tag, #t4number{
+#t4number, #T4 .second h2{
+    color: #039BB0;
+}
+
+#t4tag{
+    background-color: #039BB0;
+}
+
+#t4number{
     background-color: #FBF0E3;
+}
+
+#T41{
+    background-color: #039BB0;
+}
+
+#T42{
+    background-color: #a2e6ef;
 }
 
 /* teapercent */
@@ -229,6 +261,7 @@ img {
     border: 1px solid #000000;
     box-shadow: -4px 4px 0px #000000;
 }
+
 
 #tpercent .leftintro h2{
     padding: 20px;
@@ -255,9 +288,10 @@ img {
     border: 3px solid #000000;
 }
 
-/* #tpercent{
-    background-image: url(images/background_black.jpg);
-} */
+#tpercent2{
+    background: linear-gradient(359deg, #e59283a7, #f0d693a7, #d4f3d1a7);
+}
+
 
 /* umetea */
 
@@ -290,16 +324,17 @@ img {
    
 }
 
-
-
-
 /* teaspoon */
 
 #teaspoonnumber, #teaspoon .leftintro h2, #teaspoontag {
-    background-color: #2D241D;
+    background-color: #000000;
     color: #FFFFFF;
     border: 10px double #FFFFFF;
 
+}
+
+#teaspoon .leftintro p, #teaspoon2{
+    color: #FFFFFF;
 }
 
 #teaspoon .leftintro h2{
@@ -309,6 +344,17 @@ img {
 
 #teaspoon .postitnote{
     background-color: #FFB248;
+}
+
+#teaspoon1, #teaspoon2{
+    background-image: url(images/background_black.jpg);
+}
+
+.rip{
+    position: relative;
+    width: 100%;
+    margin-top:0;
+
 }
 
 /* itea */
@@ -325,27 +371,40 @@ img {
 }
 
 #iteatag{
-    background-color: #D5BCF1;;
-    color: #2D241D;
-    border: 10px double #FFFFFF;
+    background-color: #2D241D;
+    color:  #FFFFFF;
+}
+
+#itea1{
+    background-color: #B892E2;
+}
+
+#itea2{
+    background-color: #E8D4FE;
 }
 
 /* button */
 
 footer{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     text-align: center;
+    background-color:#2D241D;
+}
+
+#button a{
+    color: #2D241D;
 }
 
 footer p{
     margin-top: 40px;
+    color: #FFFFFF;
 
 }
 
 footer a{
     text-decoration: none;
-    color: #2D241D;
+    color: #FFFFFF;
 }
 
 
@@ -358,7 +417,11 @@ footer a{
     margin: auto;
 }
 
-footer a:hover{
+#button a{
+    color: #2D241D;
+}
+
+footer a:hover, #button a:hover{
     color: #E06F7D;
 }
 

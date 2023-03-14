@@ -42,6 +42,11 @@
     const button = document.querySelector("#button");
     button.addEventListener("click", smoothScroll);
 
+    const button1 = document.querySelector("#button1");
+    button1.addEventListener("click", smoothScroll);
+
+
+
     function smoothScroll(event){
         event.preventDefault();
 

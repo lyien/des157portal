@@ -3,7 +3,7 @@
     console.log("JS Running");
 // scroll function
     window.addEventListener("load", function(){
-        const posts = document.querySelectorAll(".targetDiv");
+        const posts = document.querySelectorAll("article");
         let postTops = [];
         let pageTop;
         let counter = 0;
@@ -15,7 +15,7 @@
         });
 
         window.addEventListener("scroll", function(){
-            pageTop = Math.floor(window.pageYOffset)+100; //at top of page, 0 pixels, more and more pixels are above top of the window
+            pageTop = Math.floor(window.pageYOffset)+150; //at top of page, 0 pixels, more and more pixels are above top of the window
             console.log(pageTop);
             if(pageTop > postTops[counter]){
                 console.log(postTops[counter])
@@ -32,7 +32,6 @@
                 console.log(counter);
                 console.log(thisDiv);
                 thisDiv.classList.replace("hidden", "show");
-                // thisDiv.classList.remove("hidden");
                 previousCounter = counter;
             }
 
@@ -61,16 +60,16 @@
 
     // hover
 
-    const bobacollage = document.querySelector("#bobacollage")
-    const firstSection = document.querySelector("#first")
+    // const bobacollage = document.querySelector("#bobacollage")
+    // const firstSection = document.querySelector("#first")
 
-    bobacollage.addEventListener('mouseover', function(event){
-        firstSection.className  = "pinkanimation"
-    });
+    // bobacollage.addEventListener('mouseover', function(event){
+    //     firstSection.className  = "pinkanimation"
+    // });
 
-    bobacollage.addEventListener('mouseout', function(event){
-        firstSection.removeAttribute("class");
-    });
+    // bobacollage.addEventListener('mouseout', function(event){
+    //     firstSection.removeAttribute("class");
+    // });
      
 
 })();

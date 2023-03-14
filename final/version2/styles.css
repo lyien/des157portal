@@ -208,7 +208,7 @@ img {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     width: 315px;
     padding:10px;
-    padding-top: 30px
+    padding-top: 30px;
 }
 
 .introimage img{
@@ -230,11 +230,11 @@ img {
 
 /* T4 */
 
-#T4 h2, #t4tag{
+#T41 h2, #t4tag{
     color: #FBF0E3;
 }
 
-#t4number, #T4 .second h2{
+#t4number, #T41 .second h2, #T42 .second h2{
     color: #039BB0;
 }
 
@@ -256,14 +256,14 @@ img {
 
 /* teapercent */
 
-#tpercent .leftintro h2, #tpercentmainimg, #tpercent .postitnote, #tpercenttag{
+#tpercent1 .leftintro h2, #tpercent2 .leftintro h2, #tpercentmainimg, #tpercent1 .postitnote, #tpercenttag{
     background: #FFFFFF;
     border: 1px solid #000000;
     box-shadow: -4px 4px 0px #000000;
 }
 
 
-#tpercent .leftintro h2{
+#tpercent1 .leftintro h2{
     padding: 20px;
     text-align: center;
 }
@@ -295,7 +295,7 @@ img {
 
 /* umetea */
 
-#umetea h2{
+#umetea1 h2, #umetea2 h2{
     color: #E06F7D;
     
 }
@@ -326,28 +326,32 @@ img {
 
 /* teaspoon */
 
-#teaspoonnumber, #teaspoon .leftintro h2, #teaspoontag {
+#teaspoonnumber, #teaspoon1 .leftintro h2, #teaspoontag {
     background-color: #000000;
     color: #FFFFFF;
     border: 10px double #FFFFFF;
 
 }
 
-#teaspoon .leftintro p, #teaspoon2{
+#teaspoon1 .leftintro p, #teaspoon2{
     color: #FFFFFF;
 }
 
-#teaspoon .leftintro h2{
+#teaspoon1 .leftintro h2{
     padding: 20px;
     text-align: center;
 }
 
-#teaspoon .postitnote{
+#teaspoon1 .postitnote{
     background-color: #FFB248;
 }
 
 #teaspoon1, #teaspoon2{
     background-image: url(images/background_black.jpg);
+}
+
+#teaspoon2{
+    padding-top:0;
 }
 
 .rip{
@@ -359,7 +363,7 @@ img {
 
 /* itea */
 
-#itea .postitnote{
+#itea1 .postitnote{
     background-color: #D5BCF1;
 }
 
@@ -429,33 +433,23 @@ footer a:hover, #button a:hover{
 
 .hidden{
     opacity:0;
-    /* filter: blur(2px);
-    transform:translateX(-50%) ; */
-}
-
-.hiddenright{
-    opacity:0;
-    /* filter: blur(2px);
-    transform:translateX(50%) ; */
+    filter: blur(2px);
+    /* transform:translateX(-50%) ; */
 }
 
 .show{
     opacity: 1;
     filter: blur(0);
-    transition: all 500ms ease-in;
+    transition: all 1s ease-in;
     /* transform:translateX(0) ; */
 }
 
-#T4 .second img, #umetea .second img, #itea .second img{
-    animation: jiggle 3s linear infinite;
-}
-
-#tpercent .second img, #teaspoon .second img{
-    animation: jiggle2 3s linear infinite;
+.second img{
+    animation: jiggle 2s linear infinite;
 }
 
 .second img:hover{
-    animation: spin 3s linear infinite;
+    animation: spin 2s linear infinite;
 }
 
 .pinkanimation{
@@ -476,18 +470,6 @@ footer a:hover, #button a:hover{
         transform: rotate(-30deg);
     }
 }
-
-@keyframes jiggle2{
-    0%, 100%{
-         transform: rotate(0);
-     } 
-     25%, 75%{
-         transform: rotate(10deg);
-     }
-     50%{
-        transform: rotate(20deg);
-     }
- }
 
 @keyframes floating {
     0% { transform: translate(0,  0px); }

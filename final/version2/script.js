@@ -58,18 +58,6 @@
         console.log(originalTop);
     };
 
-    // hover
-
-    // const bobacollage = document.querySelector("#bobacollage")
-    // const firstSection = document.querySelector("#first")
-
-    // bobacollage.addEventListener('mouseover', function(event){
-    //     firstSection.className  = "pinkanimation"
-    // });
-
-    // bobacollage.addEventListener('mouseout', function(event){
-    //     firstSection.removeAttribute("class");
-    // });
      
 
 })();

@@ -1,6 +1,6 @@
 (function () {
     "use strict"
-    alert("Scroll down to view Laura's Top 5 Boba Places")
+    alert("Hello! Welcome to this User Test. Complete these 3 tasks: Scroll down to view elements move on the page, hover over 'reasons to go / stay home' post it notes, and hover over boba images")
     console.log("JS Running");
     // scroll function
     window.addEventListener("load", function () {

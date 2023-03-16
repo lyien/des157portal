@@ -75,6 +75,8 @@ img {
     text-transform: uppercase;
     margin-bottom: 30px;
     margin-top:30px;
+    animation: floating 3s ease infinite;
+
 }
 
 #first {
@@ -196,7 +198,11 @@ img {
     height: 190px;
     font-size: 16px;
     box-shadow: -3px 3px 2px 1px rgba(0, 0, 0, 0.05);
-   
+}
+
+.postitnote:hover {
+    animation: bounce 2s ease infinite;
+    cursor:pointer;
 }
 
 .postitnote h3, .postitnote li{
@@ -292,7 +298,7 @@ img {
 }
 
 #tpercent2{
-    background: linear-gradient(359deg, #e59283a7, #f0d693a7, #d4f3d1a7);
+    background-color: #f0d69335;
 }
 
 
@@ -437,34 +443,13 @@ footer a:hover, #button a:hover{
 .hidden{
     opacity:0;
     filter: blur(2px);
-    transform:translateX(-50%) ;
 }
 
-.hidden2{
-    opacity:0;
-    filter: blur(2px);
-}
-
-
-.hidden3{
-    opacity:0;
-    filter: blur(2px);
-}
 
 .show{
     opacity: 1;
     filter: blur(0);
     animation: fade-in-bottom 1s ease-in-out both;
-
-    
-}
-
-.show1{
-    opacity: 1;
-    filter: blur(0);
-    /* transform: translateX(0); */
-    /* transition: all 500ms ease-in;
-    transform: translateX(0); */
 }
 
 
@@ -474,14 +459,22 @@ footer a:hover, #button a:hover{
 
 .second img:hover{
     animation: spin 2s linear infinite;
+    cursor: pointer;
 }
 
-.pinkanimation{
-    background: linear-gradient(133deg, #231942, #9f86c0, #e0b1cb);
+.rainbow{
+    background: linear-gradient(359deg, #e59183, #f0d593, #d4f3d1);
     background-size: 600% 600%;
-    animation: pinkanimation 6s ease infinite;
+    animation: gradient 3s ease infinite;
 
 }
+
+.blueanimation {
+        background: linear-gradient(61deg, #039bb0, #8bdae5, #fbf0e3);
+        background-size: 600% 600%;
+        animation: blueanimation 4s ease infinite;
+}
+
 
 @keyframes jiggle{
    0%, 100%{
@@ -523,3 +516,15 @@ footer a:hover, #button a:hover{
       opacity: 1;
     }
   }
+
+  @keyframes blueanimation {
+    0%{background-position:0% 63%}
+    50%{background-position:100% 38%}
+    100%{background-position:0% 63%}
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+    40% {transform: translateY(-20px);} 
+    60% {transform: translateY(-15px);} 
+ } 

@@ -58,8 +58,11 @@ img {
 /* div2 */
 #T42, #tpercent2, #umetea2, #teaspoon2, #itea2{
     margin:auto;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    height: 750px;
+}
+
+#T42 section, #tpercent2 section, #umetea2 section, #itea2 section{
+    padding-top: 170px;
 }
 
 
@@ -434,15 +437,36 @@ footer a:hover, #button a:hover{
 .hidden{
     opacity:0;
     filter: blur(2px);
-    /* transform:translateX(-50%) ; */
+    transform:translateX(-50%) ;
+}
+
+.hidden2{
+    opacity:0;
+    filter: blur(2px);
+}
+
+
+.hidden3{
+    opacity:0;
+    filter: blur(2px);
 }
 
 .show{
     opacity: 1;
     filter: blur(0);
-    transition: all 1s ease-in;
-    /* transform:translateX(0) ; */
+    animation: fade-in-bottom 1s ease-in-out both;
+
+    
 }
+
+.show1{
+    opacity: 1;
+    filter: blur(0);
+    /* transform: translateX(0); */
+    /* transition: all 500ms ease-in;
+    transform: translateX(0); */
+}
+
 
 .second img{
     animation: jiggle 2s linear infinite;
@@ -488,3 +512,14 @@ footer a:hover, #button a:hover{
     50%{background-position:81% 100%}
     100%{background-position:20% 0%}
 }
+
+@keyframes fade-in-bottom {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }

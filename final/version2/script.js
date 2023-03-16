@@ -8,14 +8,14 @@
         let pageTop;
         let counter = 0;
         let previousCounter = 0;
-        // let doneResizing; 
+        let doneResizing; 
 
          posts.forEach( function(post){
             postTops.push(Math.floor(post.getBoundingClientRect().top+window.pageYOffset));
         });
 
         window.addEventListener("scroll", function(){
-            pageTop = Math.floor(window.pageYOffset)+150; //at top of page, 0 pixels, more and more pixels are above top of the window
+            pageTop = Math.floor(window.pageYOffset)-650; //at top of page, 0 pixels, more and more pixels are above top of the window
             console.log(pageTop);
             if(pageTop > postTops[counter]){
                 console.log(postTops[counter])
@@ -27,6 +27,10 @@
                 //scrolling into the next higher section 
             }
 
+            const thisDiv = document.querySelector(`.targetDiv${counter}`);
+            const postitnote= document.querySelector('.postitnote');
+
+            
             if(counter != previousCounter){
                 const thisDiv = document.querySelector(`.targetDiv${counter}`);
                 console.log(counter);
@@ -34,6 +38,20 @@
                 thisDiv.classList.replace("hidden", "show");
                 previousCounter = counter;
             }
+
+
+            // if(counter == 1){
+            //     console.log(counter);
+            //     console.log(thisDiv);
+            //     thisDiv.classList.replace("hidden", "show1");
+            //     previousCounter = counter;
+            // } else if (counter == 2){
+            //     thisDiv.classList.replace("hidden2", "show1");
+            // } else if (counter == 3) {
+            //     thisDiv.classList.replace("hidden", "show1");
+            // } else{
+            //     thisDiv.classList.replace("hidden", "show1");
+            // }
 
         });
 
@@ -58,6 +76,8 @@
         console.log(originalTop);
     };
 
+  
      
 
 })();
+

@@ -1,6 +1,5 @@
 (function () {
     "use strict"
-    alert("Hello! Welcome to this User Test. Complete these 3 tasks: Scroll down to view elements move on the page, hover over 'reasons to go / stay home' post it notes, and hover over boba images")
     console.log("JS Running");
     // scroll function
     window.addEventListener("load", function () {
@@ -17,9 +16,8 @@
 
         window.addEventListener("scroll", function () {
             pageTop = Math.floor(window.pageYOffset) - 650; //at top of page, 0 pixels, more and more pixels are above top of the window
-            console.log(pageTop);
+            // console.log(pageTop);
             if (pageTop > postTops[counter]) {
-                console.log(postTops[counter])
                 counter++;
                 console.log(`scrolling down ${counter}`);
             } else if (counter > 1 && pageTop < postTops[counter - 1]) {
@@ -29,62 +27,51 @@
             }
 
             const thisDiv = document.querySelector(`.targetDiv${counter}`);
-            const postitnote = document.querySelector('.postitnote');
 
 
             if (counter != previousCounter) {
                 const thisDiv = document.querySelector(`.targetDiv${counter}`);
-                console.log(counter);
-                console.log(thisDiv);
+                // console.log(counter);
+                // console.log(thisDiv);
                 thisDiv.classList.replace("hidden", "show");
                 previousCounter = counter;
             }
         });
-
-
-
-
     });
 
-    // const bobaimages = document.querySelectorAll(".second img");
-    //     const background = document.querySelectorAll("article");
-    //     console.log(bobaimages);
-    //     console.log(background);
-    
-    //     for (const eachImg of bobaimages) {
-    //         eachImg.addEventListener("mouseover", function () {
-    //             if (eachImg == 0) {
-    //                 background[1].className = "blueanimation";
-    //             }
-    //             else if (eachImg.ID == 'tpercentbobaimg'){
-    //                 background.className = "blueanimation";
-    //             }  
-    //             else if (eachImg.ID == 'umeteabobaimg'){
-    //                 background.className = "blueanimation";
-    //             }
-    //             else if (eachImg.ID == 'teaspoonbobaimg'){
-    //                 background.className = "blueanimation";
-    //             }
-    //             else if (eachImg.ID == 'iteabobaimg'){
-    //                 background.className = "blueanimation";
-    //             }
-    //         });
-    
-    //         eachImg.addEventListener("mouseout", function () {
-    //             if(eachImg.ID == 'T4bobaimg' || 'tpercentbobaimg' || 'umeteabobaimg' || 'teaspoonbobaimg' || 'iteabobaimg' ){
-    //                 background.removeAttribute("class");
-    //             }
-    //         });
-    
-    //     }
+    // overlay 
 
+    const overlay = document.querySelectorAll(".overlaycontainer")
+    const image = document.querySelectorAll(".introimage")
 
+    // document.querySelector("#t4mainimg").addEventListener('click', function(event){
+    //     event.preventDefault();
+    //     document.querySelector('#T41 .overlaycontainer').classList.replace("overlayhidden", "overlayshow");
+    // });
 
-    
+    image.forEach(function(eachImage) {
+        eachImage.addEventListener('click', function openOverlay(event) {
+            const thisImage = event.target.id;
+            switch(thisImage) {
+                case "t4imainimg": document.querySelector('#T41 .overlaycontainer').classList.replace("overlayhidden", "overlayshow"); break;
+                case 'tpercentmainimg': document.querySelector('#tpercent1 .overlaycontainer').classList.replace("overlayhidden", "overlayshow"); break;
+                case 'umeteamainimg': document.querySelector('#umetea1 .overlaycontainer').classList.replace("overlayhidden", "overlayshow"); break;
+            }
+        });
+    });
 
+    window.onclick = function(event) {
+        if (event.target == overlay) {
+            overlay.classList.replace("overlayhidden", "overlayshow");
+        }
+      }
+    document.addEventListener('keydown', function(event){
+        if(event.key === "Escape"){
+            overlay.classList.replace("overlayhidden", "overlayshow");
+        }
+    });
 
-
-
+   
 
     // smoothscroll back to top 
     const button = document.querySelector("#button");
@@ -92,7 +79,6 @@
 
     const button1 = document.querySelector("#button1");
     button1.addEventListener("click", smoothScroll);
-
 
 
     function smoothScroll(event) {
@@ -104,9 +90,6 @@
         window.scrollBy({ top: originalTop, left: 0, behavior: "smooth" })
         console.log(originalTop);
     };
-
-
-
 
 })();
 

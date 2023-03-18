@@ -201,7 +201,7 @@ img {
 }
 
 .postitnote:hover {
-    animation: bounce 2s ease infinite;
+    animation: bounce 1s ease infinite;
     cursor:pointer;
 }
 
@@ -462,19 +462,6 @@ footer a:hover, #button a:hover{
     cursor: pointer;
 }
 
-.rainbow{
-    background: linear-gradient(359deg, #e59183, #f0d593, #d4f3d1);
-    background-size: 600% 600%;
-    animation: gradient 3s ease infinite;
-
-}
-
-.blueanimation {
-        background: linear-gradient(61deg, #039bb0, #8bdae5, #fbf0e3);
-        background-size: 600% 600%;
-        animation: blueanimation 4s ease infinite;
-}
-
 
 @keyframes jiggle{
    0%, 100%{
@@ -500,12 +487,6 @@ footer a:hover, #button a:hover{
 
 }
 
-@keyframes pinkanimation {
-    0%{background-position:20% 0%}
-    50%{background-position:81% 100%}
-    100%{background-position:20% 0%}
-}
-
 @keyframes fade-in-bottom {
     0% {
       transform: translateY(50px);
@@ -517,14 +498,46 @@ footer a:hover, #button a:hover{
     }
   }
 
-  @keyframes blueanimation {
-    0%{background-position:0% 63%}
-    50%{background-position:100% 38%}
-    100%{background-position:0% 63%}
-}
-
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
     40% {transform: translateY(-20px);} 
     60% {transform: translateY(-15px);} 
  } 
+
+ /* overlay */
+
+ .overlaycontainer{
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    width: 100vw;  
+    height: 100vh;
+    overflow: auto;
+    transition-property: opacity, visibility; 
+    transition-duration: 500ms;
+    transition-timing-function: ease;
+ }
+
+ .overlay{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 50px;
+    gap: 50px;
+    width: 650px;
+    background-color: white;
+    border-radius: 15px;
+    margin:auto;
+    margin-top: 120px;
+ }
+
+ .overlayhidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlayshow{
+    visibility:visible;
+    opacity: 1;
+}

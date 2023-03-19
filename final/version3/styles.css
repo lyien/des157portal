@@ -224,6 +224,13 @@ img {
     margin:auto;
 }
 
+.introimage:hover{
+    cursor:pointer;
+    background: linear-gradient(359deg, #e59183, #f0d593, #d4f3d1);
+    background-size: 600% 600%;
+    animation: gradient 8s ease infinite;
+}
+
 /* Section 2 Formatting */
 
 .second{
@@ -269,6 +276,13 @@ img {
     background: #FFFFFF;
     border: 1px solid #000000;
     box-shadow: -4px 4px 0px #000000;
+}
+
+#tpercentmainimg:hover{
+    cursor:pointer;
+    background: linear-gradient(359deg, #e59183, #f0d593, #d4f3d1);
+    background-size: 600% 600%;
+    animation: gradient 8s ease infinite;
 }
 
 

@@ -507,24 +507,25 @@ footer a:hover, #button a:hover{
  /* overlay */
 
  .overlaycontainer{
-    position: absolute;
-    background-color: rgba(0,0,0,0.5);
+    position: fixed; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
     top: 0;
     left: 0;
-    width: 100vw;  
-    height: 100vh;
-    overflow: auto;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); 
     transition-property: opacity, visibility; 
     transition-duration: 500ms;
     transition-timing-function: ease;
+    z-index: 1;
  }
 
  .overlay{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 50px;
-    gap: 50px;
+    padding-top: 30px;
+    padding-bottom:47px;
+    padding-left: 47px;
+    padding-right:47px;
     width: 650px;
     background-color: white;
     border-radius: 15px;
@@ -532,9 +533,28 @@ footer a:hover, #button a:hover{
     margin-top: 120px;
  }
 
+ .overlayflex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+ }
+
+ .close {
+    position: relative;
+    left: 650px;
+    width: 16px;
+    height:17px;
+    margin-left:0;
+ }
+
  .overlayhidden {
     visibility: hidden;
     opacity: 0;
+}
+
+.noscroll{
+    overflow-y: hidden;
 }
 
 .overlayshow{

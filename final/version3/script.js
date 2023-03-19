@@ -28,7 +28,6 @@
 
             const thisDiv = document.querySelector(`.targetDiv${counter}`);
 
-
             if (counter != previousCounter) {
                 const thisDiv = document.querySelector(`.targetDiv${counter}`);
                 // console.log(counter);
@@ -40,38 +39,95 @@
     });
 
     // overlay 
+    const T4overlay = document.querySelector('#T41 .overlaycontainer')
+    const tpercentoverlay = document.querySelector('#tpercent1 .overlaycontainer')
+    const umeteaoverlay = document.querySelector('#umetea1 .overlaycontainer')
+    const teaspoonoverlay = document.querySelector('#teaspoon1 .overlaycontainer')
+    const iteaoverlay = document.querySelector('#itea1 .overlaycontainer')
 
-    const overlay = document.querySelectorAll(".overlaycontainer")
-    const image = document.querySelectorAll(".introimage")
 
-    // document.querySelector("#t4mainimg").addEventListener('click', function(event){
+    const close = document.querySelector(".close")
+    const body = document.querySelector("body");
+
+    //open
+    document.querySelector("#t4mainimg").addEventListener('click', function (event) {
+        event.preventDefault();
+        T4overlay.classList.replace("overlayhidden", "overlayshow");
+        body.className = "noscroll"
+    });
+
+    document.querySelector("#tpercentmainimg").addEventListener('click', function (event) {
+        event.preventDefault();
+        tpercentoverlay.classList.replace("overlayhidden", "overlayshow");
+        body.className = "noscroll"
+    });
+
+    document.querySelector("#umeteamainimg").addEventListener('click', function (event) {
+        event.preventDefault();
+        umeteaoverlay.classList.replace("overlayhidden", "overlayshow");
+        body.className = "noscroll"
+    });
+
+    document.querySelector("#teaspoonmainimg").addEventListener('click', function (event) {
+        event.preventDefault();
+        teaspoonoverlay.classList.replace("overlayhidden", "overlayshow");
+        body.className = "noscroll"
+    });
+
+    document.querySelector("#iteamainimg").addEventListener('click', function (event) {
+        event.preventDefault();
+        iteaoverlay.classList.replace("overlayhidden", "overlayshow");
+        body.className = "noscroll"
+    });
+
+    //close
+
+    document.querySelector("#t4close").addEventListener('click', function (event) {
+        T4overlay.classList.replace("overlayshow", "overlayhidden");
+        body.removeAttribute("class");
+    });
+
+    document.querySelector("#tpercentclose").addEventListener('click', function (event) {
+        tpercentoverlay.classList.replace("overlayshow", "overlayhidden");
+        body.removeAttribute("class");
+    });
+
+    document.querySelector("#umeteaclose").addEventListener('click', function (event) {
+        umeteaoverlay.classList.replace("overlayshow", "overlayhidden");
+        body.removeAttribute("class");
+    });
+
+    document.querySelector("#teaspoonclose").addEventListener('click', function (event) {
+        teaspoonoverlay.classList.replace("overlayshow", "overlayhidden");
+        body.removeAttribute("class");
+    });
+
+    document.querySelector("#iteaclose").addEventListener('click', function (event) {
+        iteaoverlay.classList.replace("overlayshow", "overlayhidden");
+        body.removeAttribute("class");
+    });
+
+
+    // close.addEventListener('click', function (event) {
     //     event.preventDefault();
-    //     document.querySelector('#T41 .overlaycontainer').classList.replace("overlayhidden", "overlayshow");
+    //     if (close.id === "t4close") {
+    //         T4overlay.classList.replace("overlayshow", "overlayhidden");
+    //         body.removeAttribute("class");
+    //     } else if (close.id === "tpercentclose") {
+    //         tpercentoverlay.classList.replace("overlayshow", "overlayhidden");
+    //         body.removeAttribute("class");
+    //     } else if (close.id === "umeteaclose") {
+    //         umeteaoverlay.classList.replace("overlayshow", "overlayhidden");
+    //         body.removeAttribute("class");
+    //     } else if (close.id === "teaspoonclose") {
+    //         teaspoonoverlay.classList.replace("overlayshow", "overlayhidden");
+    //         body.removeAttribute("class");
+    //     } else {
+    //         iteaoverlay.classList.replace("overlayshow", "overlayhidden");
+    //         body.removeAttribute("class");
+    //     }
     // });
 
-    image.forEach(function(eachImage) {
-        eachImage.addEventListener('click', function openOverlay(event) {
-            const thisImage = event.target.id;
-            switch(thisImage) {
-                case "t4imainimg": document.querySelector('#T41 .overlaycontainer').classList.replace("overlayhidden", "overlayshow"); break;
-                case 'tpercentmainimg': document.querySelector('#tpercent1 .overlaycontainer').classList.replace("overlayhidden", "overlayshow"); break;
-                case 'umeteamainimg': document.querySelector('#umetea1 .overlaycontainer').classList.replace("overlayhidden", "overlayshow"); break;
-            }
-        });
-    });
-
-    window.onclick = function(event) {
-        if (event.target == overlay) {
-            overlay.classList.replace("overlayhidden", "overlayshow");
-        }
-      }
-    document.addEventListener('keydown', function(event){
-        if(event.key === "Escape"){
-            overlay.classList.replace("overlayhidden", "overlayshow");
-        }
-    });
-
-   
 
     // smoothscroll back to top 
     const button = document.querySelector("#button");

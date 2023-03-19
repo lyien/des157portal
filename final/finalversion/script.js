@@ -80,6 +80,20 @@
         body.className = "noscroll"
     });
 
+    
+    // const image = document.querySelectorAll(".introimage")
+
+    // image.forEach(function(eachImage) {
+    //     eachImage.addEventListener('click', function openOverlay(event) {
+    //         const thisImage = event.target.id;
+    //         switch(thisImage) {
+    //             case "t4imainimg": document.querySelector('#T41 .overlaycontainer').classList.replace("overlayhidden", "overlayshow"); break;
+    //             case 'tpercentmainimg': document.querySelector('#tpercent1 .overlaycontainer').classList.replace("overlayhidden", "overlayshow"); break;
+    //             case 'umeteamainimg': document.querySelector('#umetea1 .overlaycontainer').classList.replace("overlayhidden", "overlayshow"); break;
+    //         }
+    //     });
+    // });
+
     //close
 
     document.querySelector("#t4close").addEventListener('click', function (event) {

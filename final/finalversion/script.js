@@ -46,7 +46,6 @@
     const iteaoverlay = document.querySelector('#itea1 .overlaycontainer')
 
 
-    const close = document.querySelector(".close")
     const body = document.querySelector("body");
 
     //open
@@ -80,21 +79,7 @@
         body.className = "noscroll"
     });
 
-    
-    // const image = document.querySelectorAll(".introimage")
-
-    // image.forEach(function(eachImage) {
-    //     eachImage.addEventListener('click', function openOverlay(event) {
-    //         const thisImage = event.target.id;
-    //         switch(thisImage) {
-    //             case "t4imainimg": document.querySelector('#T41 .overlaycontainer').classList.replace("overlayhidden", "overlayshow"); break;
-    //             case 'tpercentmainimg': document.querySelector('#tpercent1 .overlaycontainer').classList.replace("overlayhidden", "overlayshow"); break;
-    //             case 'umeteamainimg': document.querySelector('#umetea1 .overlaycontainer').classList.replace("overlayhidden", "overlayshow"); break;
-    //         }
-    //     });
-    // });
-
-    //close
+    // close
 
     document.querySelector("#t4close").addEventListener('click', function (event) {
         T4overlay.classList.replace("overlayshow", "overlayhidden");
@@ -120,28 +105,6 @@
         iteaoverlay.classList.replace("overlayshow", "overlayhidden");
         body.removeAttribute("class");
     });
-
-
-    // close.addEventListener('click', function (event) {
-    //     event.preventDefault();
-    //     if (close.id === "t4close") {
-    //         T4overlay.classList.replace("overlayshow", "overlayhidden");
-    //         body.removeAttribute("class");
-    //     } else if (close.id === "tpercentclose") {
-    //         tpercentoverlay.classList.replace("overlayshow", "overlayhidden");
-    //         body.removeAttribute("class");
-    //     } else if (close.id === "umeteaclose") {
-    //         umeteaoverlay.classList.replace("overlayshow", "overlayhidden");
-    //         body.removeAttribute("class");
-    //     } else if (close.id === "teaspoonclose") {
-    //         teaspoonoverlay.classList.replace("overlayshow", "overlayhidden");
-    //         body.removeAttribute("class");
-    //     } else {
-    //         iteaoverlay.classList.replace("overlayshow", "overlayhidden");
-    //         body.removeAttribute("class");
-    //     }
-    // });
-
 
     // smoothscroll back to top 
     const button = document.querySelector("#button");

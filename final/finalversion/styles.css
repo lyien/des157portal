@@ -434,8 +434,6 @@ footer a{
     color: #FFFFFF;
 }
 
-
-
 #button{
     display: block;
     padding: 20px;
@@ -560,6 +558,10 @@ footer a:hover, #button a:hover{
     width: 16px;
     height:17px;
     margin-left:0;
+ }
+
+ .close:hover {
+    cursor:pointer;
  }
 
  .overlayhidden {
